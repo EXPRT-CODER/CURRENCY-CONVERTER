@@ -68,7 +68,8 @@ function converting(){
   var selected1stCurrency = document.getElementById("1stSelect").value;
   var selected2ndCurrency = document.getElementById("2ndSelect").value;
     if(selected1stCurrency===check1stCurrency && selected2ndCurrency===check2ndCurrency){
-        document.getElementById('function-output').value = gotValue * rate.toFixed(2);
+        let result = gotValue * rate;
+        document.getElementById('function-output').value = result.toFixed(2);
         return ;
     }
   convert(selected1stCurrency,selected2ndCurrency,gotValue);
