@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CURRENCY CONVERTER</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body onload="nameCurrency()" >
+ 
+    <h2>CURRENCY CONVERTER</h2>
+    
+    <div class="input-container containers">
+       <input id="function-input" oninput="converting()" value="1"
+        class="same-css" type="number" placeholder="Enter Amount">
+        <select id="1stSelect" class="same-css">
+          <option value="INR" selected>INR</option>
+        </select>
+   </div>
+    
+    <div class="output-container containers">
+      <input id="function-output" class="same-css"
+         placeholder="Converted Amount">
+        <select id="2ndSelect" class="same-css">
+          <option value="USD" selected>USD</option>
+        </select>
+    </div>
+  <button class="same-css" onclick="converting()">CONVERT</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>

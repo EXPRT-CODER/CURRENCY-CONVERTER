@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+  background-image: url('currency-converter.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+h2{
+  margin-top: 20%;
+  font-family: 'Open Sans' , sans-serif ;
+  color: white;
+  font-size: clamp (1.8rem, 5vw, 5rem);
+}
+.same-css{
+  color:white;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  padding: 5px;
+  border: 2px solid white;
+  background: transparent;
+}
+input{
+  width: 70%;
+  border-radius: 10px 0px 0px 10px;
+}
+select{
+  padding: 0px;
+  width: 25%;
+  border-radius: 0px 10px 10px 0px;
+}
+button{
+  border-radius: 10px ;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  body{
+    gap: 0px;
+  }
+  h2{
+    margin-top: 10%;
+  }
+}
+
+
