@@ -1,15 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body{
+body {
   background-image: url('currency-converter.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  height: 100vh;
+  margin: 0;
 }
 h2{
   margin-top: 20%;
@@ -40,9 +43,15 @@ button{
 }
 
 
-@media only screen and (min-width: 1000px) {
-  body{
-    gap: 0px;
+@media only screen and (min-width: 768px) {
+  input{
+   width: 500px;
+  }
+  select{
+    width: 100px;
+  }
+  button{
+    width: 100px;
   }
   h2{
     margin-top: 10%;
